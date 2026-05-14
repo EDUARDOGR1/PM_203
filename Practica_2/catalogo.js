@@ -1,4 +1,4 @@
-const catalogo_Productos = [
+const catalogo = [
   {
     id: 1,
     nombre:    "Capuchino",
@@ -55,7 +55,7 @@ console.log(catalogo[0].nombre)
 console.log(catalogo[0].precio)
  
 catalogo[0].precio = 65
-catalogo[0].nombre = "Capuchino especial"
+catalogo[0].nombre = "Capuchino normal"
  
 catalogo.push({
   nombre:    "Agua",
@@ -68,9 +68,10 @@ catalogo.push({
 catalogo.forEach(producto => {
   console.log(`${producto.nombre} - $${producto.precio}`)
 })
- 
-const bebidas = catalogo.filter(p => p.categoria === "Bebida")
+
+
+const bebidas = catalogo.filter(producto => producto.categoria === "Bebida")
 console.log(bebidas)
  
-const comidas = catalogo.filter(p => p.categoria === "Comida")
+const comidas = catalogo.filter(producto => producto.categoria === "Comida")
 console.log(comidas)
