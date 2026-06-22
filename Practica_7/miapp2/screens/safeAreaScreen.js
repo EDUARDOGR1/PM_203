@@ -1,11 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import MenuScreen from './screens/menuScreen';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function SafeAreaScreen() {
   return (
     <View style={styles.container}>
-      <MenuScreen />
+      <Text>Safe Area Screen Mary</Text>
       <StatusBar style="auto" />
     </View>
   );

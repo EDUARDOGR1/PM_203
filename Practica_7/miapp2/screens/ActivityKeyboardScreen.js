@@ -1,11 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import MenuScreen from './screens/menuScreen';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function ActivityKeyboardScreen() {
   return (
     <View style={styles.container}>
-      <MenuScreen />
+      <Text>ActivityIndicator & KeyboardAvoidingView</Text>
       <StatusBar style="auto" />
     </View>
   );
