@@ -51,7 +51,7 @@ export default function PressableScreen() {
   );
 }
 
-// Estilos de la aplicación
+// Estilos de la aplicacion
 const styles = StyleSheet.create({
   container: {
     flex: 1,
